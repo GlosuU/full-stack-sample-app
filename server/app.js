@@ -50,6 +50,9 @@ app.get('/random', function(req, res, next) {
  * Users Routes
  */
 app.use('/users', usersRouter);
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 app.use(cors({
   origin: 'http://localhost:3000'
